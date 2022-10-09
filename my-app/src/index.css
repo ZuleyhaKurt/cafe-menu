@@ -17,3 +17,25 @@ code {
   justify-content: center;
   gap:1rem;
 }
+
+.header{
+  text-align: center;
+}
+.main{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.card{
+  display: flex;
+  grid-row: 1/1;
+}
+.why{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.card img{
+  width: 100px;
+  height: 100px;
+}
