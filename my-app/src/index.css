@@ -5,11 +5,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.App{
+  margin: 0;
+  padding: 0;
 }
 .navbar{
   list-style: none;
@@ -42,6 +47,7 @@ code {
 .main{
   display: flex;
   gap:1rem;
+  width: 45%;
   
 
  
@@ -50,10 +56,11 @@ code {
 
  
 .big{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
+display: flex;
+flex-wrap: wrap;
   gap: 4rem;
   margin: 0 7rem;
+ 
 
 }
 
@@ -70,7 +77,7 @@ code {
   width: 100%;
 }
 .first{
-  width: 60%;
+  width: 80%;
   border-bottom: 1px  dashed black;
   display: flex;
   justify-content: space-between;
@@ -82,4 +89,29 @@ code {
 .second :nth-child(1){
   font-style: italic ;
   
+}
+
+@media screen and(max-width:500px) {
+.big{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.container{
+  margin: 0;
+  width: 100%;
+}
+.main{
+  width: 100%;
+}
+.navbar{
+  text-align: center;
+}
+.main img{
+  width: 200px;
+  height: 400px;
+}
+.title1{
+  display: none;
+}
 }

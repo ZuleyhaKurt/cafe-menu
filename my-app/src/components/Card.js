@@ -4,7 +4,7 @@ const Card = ({ item }) => {
     
     const{name,title,price,url,category}=item
   return (
-    <div className="container">
+    
       <div className='main'>
        <img src={url} alt="" />
         <div className='content'>
@@ -14,12 +14,11 @@ const Card = ({ item }) => {
             </div>
             <div className='second'>
                    <p><b>{ category}</b></p>
-                  <p>{ title}</p>
+                  <p className='title1'>{ title}</p>
             </div>
                       
         </div>
       </div>
-    </div>
   )
 }
 
