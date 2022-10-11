@@ -4,20 +4,22 @@ const Card = ({ item }) => {
     
     const{name,title,price,url,category}=item
   return (
+    <div className="container">
       <div className='main'>
-          <div className="why">
-                <div className='card'>
-                    <img src={url} alt="" />
-                        <div>
-                            <div className='first'>
-                            <p>{name} <span>{price}</span></p>
-                            </div>
-                            <p>{ category}</p>
-                            <p>{ title}</p>
-                        </div>
-                    </div>
-              </div>
-          </div>
+       <img src={url} alt="" />
+        <div className='content'>
+            <div className='first'>
+            <p>{name} </p>
+            <span>{price}</span>
+            </div>
+            <div className='second'>
+                   <p><b>{ category}</b></p>
+                  <p>{ title}</p>
+            </div>
+                      
+        </div>
+      </div>
+    </div>
   )
 }
 

@@ -16,26 +16,70 @@ code {
   display: flex;
   justify-content: center;
   gap:1rem;
+  color: #ffa500;
+}
+.navbar li{
+  padding: 0.5rem;
+  transition: all 1s;
+}
+.navbar li:hover{
+  background-color: #ffa500;
+  color: white;
 }
 
 .header{
   text-align: center;
 }
+.header h3{
+ font-size: 2rem;
+  padding: 1rem;
+  font-weight: 600;
+  text-decoration:underline #ffa500 ;
+}
+
+ 
+
 .main{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-}
-
-.card{
   display: flex;
-  grid-row: 1/1;
-}
-.why{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
+  gap:1rem;
+  
+
+ 
 }
 
-.card img{
-  width: 100px;
-  height: 100px;
+
+ 
+.big{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 4rem;
+  margin: 0 7rem;
+
+}
+
+
+.main img{
+  width: 150px;
+  height: 150px;
+  transition: all 1s;
+}
+.main img:hover{
+  transform: scale(120%);
+}
+.content{
+  width: 100%;
+}
+.first{
+  width: 60%;
+  border-bottom: 1px  dashed black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.first span{
+  color:#ffa500 ;
+}
+.second :nth-child(1){
+  font-style: italic ;
+  
 }

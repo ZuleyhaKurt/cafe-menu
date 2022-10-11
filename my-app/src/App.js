@@ -9,9 +9,11 @@ function App() {
     <div className="App">
       <Header />
       <Navbar />
+      <div className='big'>
       {
         Data.map((item)=><Card item={item}/>)
-      }
+        }
+        </div>
     </div>
   );
 }
