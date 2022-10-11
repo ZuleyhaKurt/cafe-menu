@@ -7,6 +7,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
 }
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -47,7 +52,7 @@ code {
 .main{
   display: flex;
   gap:1rem;
-  width: 45%;
+  width: 20em;
   
 
  
@@ -59,15 +64,15 @@ code {
 display: flex;
 flex-wrap: wrap;
   gap: 4rem;
-  margin: 0 7rem;
+
  
 
 }
 
 
 .main img{
-  width: 150px;
-  height: 150px;
+  width: 10rem;
+  height: 100%;
   transition: all 1s;
 }
 .main img:hover{
@@ -90,28 +95,29 @@ flex-wrap: wrap;
   font-style: italic ;
   
 }
+.title1{
+  font-size: 1rem;
+}
 
-@media screen and(max-width:500px) {
+
+@media screen and (max-width:500px) {
 .big{
   display: flex;
-  flex-direction: column;
-  margin: 0;
-}
-.container{
-  margin: 0;
   width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
 }
+
 .main{
   width: 100%;
 }
 .navbar{
   text-align: center;
 }
-.main img{
-  width: 200px;
-  height: 400px;
-}
 .title1{
-  display: none;
+  font-size: 0.7rem;
 }
+
 }
