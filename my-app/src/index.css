@@ -29,7 +29,7 @@ code {
   color: #ffa500;
 }
 .navbar li{
-  padding: 0.5rem;
+  padding:1rem 0;
   transition: all 1s;
 }
 .navbar li:hover{
@@ -52,7 +52,7 @@ code {
 .main{
   display: flex;
   gap:1rem;
-  width: 20em;
+  width: 45%;
   
 
  
@@ -63,7 +63,8 @@ code {
 .big{
 display: flex;
 flex-wrap: wrap;
-  gap: 4rem;
+gap: 4rem;
+margin-top: 1rem;
 
  
 
@@ -100,7 +101,7 @@ flex-wrap: wrap;
 }
 
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:640px) {
 .big{
   display: flex;
   width: 100%;

@@ -13,7 +13,8 @@ const Card = ({ item }) => {
             <span>{price}</span>
             </div>
             <div className='second'>
-                   <p><b>{ category}</b></p>
+          <p><b>{category}</b></p>
+          <br />
                   <p className='title1'>{ title}</p>
             </div>
                       
